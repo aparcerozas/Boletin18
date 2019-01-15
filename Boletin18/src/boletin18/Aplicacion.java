@@ -18,7 +18,7 @@ public class Aplicacion {
     public static void main(String[] args) {
         // TODO code application logic here
         Persoal pedro = new Persoal("986345512","pedrosanchez@partidosocialista.org");
-        Academica pedrin = new Academica("Pedro", 13, pedro);
+        Academica pedrin = new Academica(1224, "Pedro", 13, pedro);
         pedrin.setNota(8);
         System.out.println(pedrin.toString());
     }

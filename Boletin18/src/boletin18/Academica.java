@@ -17,11 +17,10 @@ public class Academica {
     private Persoal alumno;
 
     public Academica() {
-        this.numReferencia = 2018;
     }
 
-    public Academica(String nome, int nota, Persoal alumno) {
-        this.numReferencia = 2018;
+    public Academica(int numReferencia, String nome, int nota, Persoal alumno) {
+        this.numReferencia = numReferencia;
         this.nome = nome;
         this.nota = analizarNota(nota);
         this.alumno = alumno;
@@ -72,10 +71,6 @@ public class Academica {
         else{
             return nota;
         }
-    }
-    
-    private void numCorrelativo(){
-        
     }
     
 }
