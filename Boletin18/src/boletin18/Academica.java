@@ -11,16 +11,20 @@ import boletin18_2.Persoal;
  * @author aparcerozas
  */
 public class Academica {
+    private static int numReferenciaP = 2017;
     private int numReferencia;
     private String nome;
     private int nota;
     private Persoal alumno;
 
     public Academica() {
+        numReferenciaP++;
+        numReferencia = numReferenciaP;
     }
 
-    public Academica(int numReferencia, String nome, int nota, Persoal alumno) {
-        this.numReferencia = numReferencia;
+    public Academica(String nome, int nota, Persoal alumno) {
+        numReferenciaP++;
+        numReferencia = numReferenciaP;
         this.nome = nome;
         this.nota = analizarNota(nota);
         this.alumno = alumno;
@@ -28,10 +32,6 @@ public class Academica {
 
     public int getNumReferencia() {
         return numReferencia;
-    }
-
-    public void setNumReferencia(int numReferencia) {
-        this.numReferencia = numReferencia;
     }
 
     public String getNome() {

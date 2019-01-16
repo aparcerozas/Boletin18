@@ -17,10 +17,13 @@ public class Aplicacion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Persoal pedro = new Persoal("986345512","pedrosanchez@partidosocialista.org");
-        Academica pedrin = new Academica(1224, "Pedro", 13, pedro);
-        pedrin.setNota(8);
-        System.out.println(pedrin.toString());
+        Persoal pedrin = new Persoal("986345412", "pedrosanchez@partidosocialista.org");
+        Persoal martina = new Persoal("986317731", "martasanchez@hotmail.com");
+        Academica pedro = new Academica("Pedro", 13, pedrin);
+        Academica marta = new Academica("Marta", 9, martina);
+        pedro.setNota(8);
+        System.out.println(pedro.toString());
+        System.out.println(marta.toString());
     }
     
 }
